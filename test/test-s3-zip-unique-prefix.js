@@ -45,7 +45,7 @@ var s3Stub = fileStreamForFiles(
   true
 )
 s3Zip = proxyquire('../s3-zip.js', {
-  's3-files': { createFileStream: sinon.stub().returns(s3Stub) }
+  '@sustainhawaii/s3-files': { createFileStream: sinon.stub().returns(s3Stub) }
 })
 
 t.test(

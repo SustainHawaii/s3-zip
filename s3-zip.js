@@ -24,6 +24,8 @@ s3Zip.archive = function (opts, folder, filesS3, filesZip) {
 
   connectionConfig.bucket = opts.bucket
 
+  connectionConfig.extraGetObjectParams = opts.extraGetObjectParams
+
   self.client = s3Files.connect(connectionConfig)
 
   const keyStream = self.client.createKeyStream(folder, filesS3)

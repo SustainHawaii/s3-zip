@@ -1,15 +1,16 @@
 {
-  "name": "s3-zip",
+  "name": "@sustainhawaii/s3-zip",
   "version": "3.2.0",
   "description": "Download selected files from an Amazon S3 bucket as a zip file.",
   "main": "s3-zip.js",
   "scripts": {
     "test": "standard && tap --cov test/test*.js",
-    "coverage": "npm test -- --cov --coverage-report=lcov"
+    "coverage": "npm test -- --cov --coverage-report=lcov",
+    "pub": "standard-version && git push --follow-tags origin master && npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/orangewise/s3-zip.git"
+    "url": "git+ssh://git@github.com/SustainHawaii/s3-zip.git"
   },
   "keywords": [
     "amazon",
@@ -18,15 +19,12 @@
     "zip",
     "files"
   ],
-  "author": "Ronald Luitwieler",
+  "author": "Charles Koehl",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/orangewise/s3-zip/issues"
-  },
   "homepage": "https://github.com/orangewise/s3-zip#readme",
   "dependencies": {
     "archiver": "^5.2.0",
-    "s3-files": "^2.0.0"
+    "@sustainhawaii/s3-files": "^2.0.0"
   },
   "devDependencies": {
     "archiver-zip-encryptable": "^1.0.5",

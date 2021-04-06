@@ -47,6 +47,7 @@ s3Zip.archiveStream = function (stream, filesS3, filesZip) {
   archive.on('error', function (err) {
     self.debug && console.log('archive error', err)
   })
+  let counter = 0
   stream
     .on('data', function (file) {
       if (file.path[file.path.length - 1] === '/') {
@@ -68,7 +69,8 @@ s3Zip.archiveStream = function (stream, filesS3, filesZip) {
       if (file.data.length === 0) {
         archive.append('', entryData)
       } else {
-        archive.append(file.data.toString('base64'), entryData)
+        archive.append('string cheese!', { name: `file${counter++}.txt` })
+        // archive.append(file.data, entryData)
       }
     })
     .on('end', function () {

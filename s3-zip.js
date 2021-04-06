@@ -1,6 +1,7 @@
 const s3Files = require('@sustainhawaii/s3-files')
 const archiver = require('archiver')
 const { PassThrough } = require('stream')
+const fs = require('fs')
 
 const s3Zip = {}
 module.exports = s3Zip
@@ -69,7 +70,8 @@ s3Zip.archiveStream = function (stream, filesS3, filesZip) {
       archive.append('', entryData)
     } else {
       // archive.append(file.data, entryData)
-      archive.append(file.data.pipe(new PassThrough()), entryData)
+      fs.writeFileSync('myfile', file.data)
+      archive.file('myfile', entryData)
     }
   }).on('end', function () {
     self.debug && console.log('end -> finalize')

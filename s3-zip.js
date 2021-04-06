@@ -1,5 +1,6 @@
 const s3Files = require('@sustainhawaii/s3-files')
 const archiver = require('archiver')
+var b64 = require('base64-js')
 
 const s3Zip = {}
 module.exports = s3Zip
@@ -68,7 +69,7 @@ s3Zip.archiveStream = function (stream, filesS3, filesZip) {
       if (file.data.length === 0) {
         archive.append('', entryData)
       } else {
-        archive.append(file.data, entryData)
+        archive.append(b64.toByteArray(file.data), entryData)
       }
     })
     .on('end', function () {

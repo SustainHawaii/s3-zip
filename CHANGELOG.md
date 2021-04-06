@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.3.7](https://github.com/SustainHawaii/s3-zip/compare/v3.3.6...v3.3.7) (2021-04-06)
+
+
+### Bug Fixes
+
+* try pip with PassThrough ([7be758d](https://github.com/SustainHawaii/s3-zip/commit/7be758d642a37e746238ef1233c81b718f20d7e1))
+
 ### [3.3.6](https://github.com/SustainHawaii/s3-zip/compare/v3.3.5...v3.3.6) (2021-04-06)
 
 ### [3.3.5](https://github.com/SustainHawaii/s3-zip/compare/v3.3.4...v3.3.5) (2021-04-06)

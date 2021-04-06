@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.3.8](https://github.com/SustainHawaii/s3-zip/compare/v3.3.7...v3.3.8) (2021-04-06)
+
+
+### Bug Fixes
+
+* write a file then append to archive ([ab85a7b](https://github.com/SustainHawaii/s3-zip/commit/ab85a7b07af087f90ef8f6c36dddc9920fa3edb3))
+
 ### [3.3.7](https://github.com/SustainHawaii/s3-zip/compare/v3.3.6...v3.3.7) (2021-04-06)
 
 

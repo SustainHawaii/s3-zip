@@ -23,8 +23,8 @@
   "license": "MIT",
   "homepage": "https://github.com/orangewise/s3-zip#readme",
   "dependencies": {
-    "archiver": "^5.2.0",
-    "@sustainhawaii/s3-files": "^2.0.0"
+    "@sustainhawaii/s3-files": "^2.0.0",
+    "archiver": "^5.2.0"
   },
   "devDependencies": {
     "archiver-zip-encryptable": "^1.0.5",

@@ -286,9 +286,9 @@
   integrity sha512-+iTbntw2IZPb/anVDbypzfQa+ay64MW0Zo8aJ8gZPWMMK6/OubMVb6lUPMagqjOPnmtauXnFCACVl3O7ogjeqQ==
 
 "@sustainhawaii/s3-files@^2.0.0":
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/@sustainhawaii/s3-files/-/s3-files-2.1.9.tgz#caaa9f214b64d05df36b82eb1644aa2245792d22"
-  integrity sha512-ijTyEZQZ4D07sFVuWeg/6syeIFvii/Xrsshl22G6ThyyKCFS+b2BPtvU0mUq2OJElKQvZdwV7Yl83sNVkoDqtA==
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/@sustainhawaii/s3-files/-/s3-files-2.1.11.tgz#3074ffc6e8e1a6a4b5134033e71fdf6799184334"
+  integrity sha512-Qx/4DDV7HAfgmVo2VVVRcRnCkmQ7FdoOWJU9n5mMnVglgTckIgij4e7L0e+FGu1PUQKf9uPf5rmANsNdRQFKTQ==
   dependencies:
     aws-sdk "^2.449.0"
     concat-stream "^2.0.0"

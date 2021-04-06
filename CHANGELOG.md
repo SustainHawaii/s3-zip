@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.3.4](https://github.com/SustainHawaii/s3-zip/compare/v3.3.3...v3.3.4) (2021-04-06)
+
+
+### Bug Fixes
+
+* append file data as base64 strings instead of buffers ([a07171a](https://github.com/SustainHawaii/s3-zip/commit/a07171a5d363d3e8cb388b99611586f98dcf3b5f))
+
 ### [3.3.3](https://github.com/SustainHawaii/s3-zip/compare/v3.3.2...v3.3.3) (2021-04-06)
 
 ### [3.3.2](https://github.com/SustainHawaii/s3-zip/compare/v3.3.1...v3.3.2) (2021-04-06)

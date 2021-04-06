@@ -68,7 +68,7 @@ s3Zip.archiveStream = function (stream, filesS3, filesZip) {
       if (file.data.length === 0) {
         archive.append('', entryData)
       } else {
-        archive.append(file.data, entryData)
+        archive.append(file.data.toString('base64'), entryData)
       }
     })
     .on('end', function () {
